@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-body:#222;
+    --bg-alt: #1f1f1f;
+    --text-color:#f1f1f1;
+
+    --primary-color:rgb(11, 89, 244);
+    --header-height:60px;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+}
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: var(--bg-alt);
+    padding:  0px 50px;
+    z-index: 100;
+    
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 28px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.logo span{
+    color: var(--primary-color);
+    width: 20px;
+    height: 20px;
+}
+
+.btn-close{
+    display: none;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.list-item:hover{
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.actions{
+    padding: 20px 0px;
+    
+}
+
+.actions button{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 30px;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    
+}
+.btn-menu{
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    
+    .nav{
+    position: fixed;
+    top: var(--header-height);
+    left: -100%;
+    width: 80%;
+    height: calc(100vh - var(--header-height));
+    padding: 60px 20px 40px;
+    background-color: #333;
+    transition: left .5s ease-in-out;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    ul li{
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .btn-close{
+        font-size: 30px;
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        top: 60px;
+        left: 80%;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: var(--text-color);
+    }
+
+    .show_menu{
+        left: 0px;
+    }
+   
+    .btn-menu{
+       display: contents;
+       top:20px;
+       right: 20px;
+    }
+}
+.section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    z-index: 2;
+}
+
+.section.title{
+font-size: 28px;
+text-align: center;
+margin: 20px 0px;
+}
+.container{
+    margin: 30px 10px 15px;
+    display: flex;
+    width: 100vw;
+    height:auto ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main{
+    margin-top: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*<--! Hero  skills start -->*/
+.hero
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    gap: 10px
+}
+.hero span{
+    color: var(--primary-color);
+}
+
+
+/*<--! Hero  skills End -->*/
+
+
+
+
+/*<--! Tech  skills start -->*/
+
+.skills-tech{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.skill{
+    width: 150px;
+    height: 200px;
+    background-color:var(--bg-alt);
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    color: var(--primary-color);
+    transition: all .05s;
+    border-radius: 10px;
+}
+.skill:hover{
+    transform: scale(1.05);
+    color: var(--text-color);
+}
+.skill img{
+    width: 100%;
+    height:auto;     
+}
+/*<--! Tech  skills End -->*/
+
+
+/*<--! Soft skills start -->*/
+.soft-skills{
+}
+
+.about-information{
+    width: clamp(300px,50%,500px);
+}
