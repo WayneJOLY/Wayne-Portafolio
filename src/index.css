@@ -46,7 +46,7 @@ html{
 .btn-close{
     display: none;
 }
-ul{
+.navigation ul{
     display: flex;
 }
 ul li{
@@ -128,7 +128,7 @@ ul li{
 }
 .section{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,9 +211,11 @@ margin: 20px 0px;
 
 
 /*<--! Soft skills start -->*/
-.soft-skills{
+.soft-skills ul {
+ display: flex;
+ flex-direction: column;
 }
 
-.about-information{
-    width: clamp(300px,50%,500px);
+.soft-skills ul li{
+display: inline-block;
 }
