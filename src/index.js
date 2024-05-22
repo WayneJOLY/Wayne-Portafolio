@@ -67,8 +67,13 @@ for (const skill of skills) {
     
     html+=`
     <div class="skill">         
-                    <div class="skill-img"><img src="${skill.path}" alt="${skill.name}"></div>
-                    <div class="skill-text"><h3>${skill.name}</h3></div>
+                    <div class="skill-img">
+                    <img src="${skill.path}" alt="${skill.name}">
+                    </div>
+
+                    <div class="skill-text">
+                    <h3>${skill.name}</h3>
+                    </div>
     </div>
     `
   }
@@ -77,14 +82,7 @@ for (const skill of skills) {
 skillsTech.innerHTML=html
 console.log(skillsTech.innerHTML=html)
 
-const nav=document.querySelector('.nav')
-const showMenu=document.getElementById('btn-menu')
-showMenu.addEventListener('click',()=>{
-  nav.classList.toggle('show_menu') 
-})
 
 
-const btnClose=document.getElementById('btn-close')
-btnClose.addEventListener('click',()=>{
-  nav.classList.remove('show_menu') 
-})
+  
+

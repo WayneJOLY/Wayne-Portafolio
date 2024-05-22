@@ -5,10 +5,10 @@
 }
 :root{
     --bg-body:#222;
-    --bg-alt: #1f1f1f;
-    --text-color:#f1f1f1;
+    --bg-alt: #010302;
+    --text-color:#f5f2f5;
 
-    --primary-color:rgb(11, 89, 244);
+    --primary-color:rgb(23, 29, 210);
     --header-height:60px;
 }
 
@@ -27,8 +27,7 @@ html{
     align-items:center;
     background-color: var(--bg-alt);
     padding:  0px 50px;
-    z-index: 100;
-    
+    z-index: 100; 
 }
 
 .logo{
@@ -55,16 +54,24 @@ ul li{
     cursor: pointer;
 }
 
+.navigation ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
 .list-item:hover{
     color: var(--primary-color);
     transition: all 0.3s;
 }
 
 .actions{
-    padding: 20px 0px;
-    
+    padding: 20px 0px; 
 }
 
+.active{
+    color: var(--primary-color);
+}
 .actions button{
     width: 30px;
     height: 30px;
@@ -75,7 +82,7 @@ ul li{
     cursor: pointer;
     
 }
-.btn-menu{
+.show_menu{
     display: none;
 }
 
@@ -120,7 +127,7 @@ ul li{
         left: 0px;
     }
    
-    .btn-menu{
+    .show_menu{
        display: contents;
        top:20px;
        right: 20px;
@@ -169,9 +176,13 @@ margin: 20px 0px;
 }
 .hero span{
     color: var(--primary-color);
+    display: inline;
 }
 
-
+.hero p{
+    display: inline-block;
+    text-align: center;
+}
 /*<--! Hero  skills End -->*/
 
 
@@ -214,8 +225,104 @@ margin: 20px 0px;
 .soft-skills ul {
  display: flex;
  flex-direction: column;
+ gap: 5px;
 }
 
-.soft-skills ul li{
-display: inline-block;
+.soft-skills ul li  {
+    display: flex;
+    align-content: center;
+    width: 90vw;
+    height: 7vh;   
+    border-radius: 50px;
+   
 }
+
+.soft-skills svg{
+    width: 100%;
+    height: 100%;
+    color: var(--primary-color);
+}
+
+.soft-skills h3{
+    font-size: 7vh;
+}
+
+.full-screen{
+    height: 100vh;
+}
+
+.others-skills{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+
+/*---------------------- Projets  Start------------------------------------*/
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: minmax(100%,1fr);
+    grid-template-areas: "cards";
+    overflow: hidden;
+    border-radius: 10px;
+    border:5px solid red;
+  }
+  
+  .card img{
+    grid-area: cards;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card figcaption{
+    grid-area: cards;
+    background: #000000f0;
+    transform: translateY(calc(100% - 4rem));
+    transition: transform 600ms;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .card h3{
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    font-size: 21px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  .card ul li{
+    display: inline-block;
+    background-color: var(--primary-color);
+    margin-top: 20px;
+    padding: 5px 7px;
+    border-radius: 5px;
+  }
+  
+  .card a{
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #f5f2f5;
+    background-color: var(--primary-color);
+    text-align: center;
+  }
+  .card:hover figcaption{
+    transform: none;
+  }
+  
