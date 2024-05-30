@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: var(--text-color);
 }
 :root{
     --bg-body:#222;
@@ -47,20 +48,22 @@ html{
 }
 .navigation ul{
     display: flex;
+    width: 100%;
 }
 ul li{
     list-style: none;
     margin-right: 15px;
     cursor: pointer;
     margin: 10px 20px;
-
+    height: 100%;
 }
 
 .navigation ul li a{
     text-decoration: none;
     text-transform: capitalize;
-    color: var(--text-color);
     font-size: 25px;
+    height: 100%;
+    padding: 7px 3px;
 }
 
 .navigation ul li a:hover{
@@ -77,6 +80,8 @@ ul li{
 
 .active{
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    border-top: 2px solid var(--primary-color);
 }
 .actions button{
     width: 30px;
@@ -131,15 +136,28 @@ ul li{
         color: var(--text-color);
     }
 
-    .show_menu{
-        left: 0px;
+     .show-menu{
+        position: fixed;
+        top: var(--header-height);
+        left: 0%;
+        width: 80%;
+        height: calc(100vh - var(--header-height));
+        padding: 60px 20px 40px;
+        background-color: #333; 
+        transition: left .5s ease-in-out;
+        /*<--!rgba(237, 237, 237,.5)-->*/
     }
-   
+    
     .btn-menu{
        display: contents;
        top:20px;
        right: 20px;
     }
+
+    .card figcaption ul li{
+        display: none;
+    }
+        
 }
 .section{
     width: 100vw;
@@ -179,18 +197,14 @@ margin: 20px 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 5vw;
+    font-size: 7vw;
     gap: 10px
 }
 .hero span{
     color: var(--primary-color);
-    display: inline;
 }
 
-.hero p{
-    display: inline-block;
-    text-align: center;
-}
+
 /*<--! Hero  skills End -->*/
 .about{
     display: flex;
@@ -201,7 +215,29 @@ margin: 20px 0px;
 
 .about-information{
     max-width: 500px;
-    padding: 10px 40px;
+    height: auto;
+    padding: 50px 40px;
+    display: block;
+}
+.about-information h2{
+margin-bottom: 20px;
+font-size: 35px;
+}
+
+.about-information p{
+    line-height: 1.5rem;
+    font-size: 21px;
+}
+
+.download{
+    width: 42px;
+    height: 64px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px 22px;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
 .about-img{
@@ -224,10 +260,12 @@ margin: 20px 0px;
 
 @keyframes moveY{
     from{
-        transform:translateY(0px)
+        transform:translateY(0px);
+    
     }
     to{
-        transform:translateY(15px)
+        transform:translateY(25px);
+        
     }
 }
 /*<--! Tech  skills start -->*/
@@ -331,6 +369,7 @@ margin: 20px 0px;
   
   .card figcaption{
     grid-area: cards;
+    position: relative;
     background: #000000f0;
     transform: translateY(calc(100% - 4rem));
     transition: transform 600ms;
@@ -348,23 +387,46 @@ margin: 20px 0px;
     text-transform: capitalize;
   }
 
+  .card ul{
+    display: flex;
+  }
   .card ul li{
     display: inline-flex;
+    flex-wrap: wrap;
     background-color: var(--primary-color);
     margin-top: 20px;
     padding: 5px 7px;
     border-radius: 5px;
   }
   
-  .card a{
+  .card figcaption a{
     width: 40px;
     height: 40px;
     font-size: 40px;
-    color: #f5f2f5;
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
     text-align: center;
+  }
+
+  .card figcaption a:hover{
+    color: #f1f1f1;
+  }
+
+  .link1{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+  }
+  .link2{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
   }
   .card:hover figcaption{
     transform: none;
+  }
+
+  .project{
+    border:none;
   }
   

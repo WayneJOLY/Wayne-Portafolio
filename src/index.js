@@ -84,5 +84,26 @@ console.log(skillsTech.innerHTML=html)
 
 
 
-  
 
+let nav=document.querySelector('.nav')
+let menu=document.querySelector('.btn-menu')
+let close=document.querySelector('.btn-close')
+let links=document.querySelectorAll('.list-link')
+menu.addEventListener("click",function () {
+  nav.classList.toggle('show-menu')
+  })
+  
+close.addEventListener('click',function (){
+  nav.classList.remove('show-menu')
+})
+
+
+
+links.forEach(link => {
+  link.addEventListener('click',function (e){
+    document.querySelector('.active')?.classList.remove('active')
+    link.classList.add('active')
+    nav.classList.remove('show-menu')
+    }
+)
+})
