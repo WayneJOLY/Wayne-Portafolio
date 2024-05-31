@@ -209,7 +209,7 @@ margin: 20px 0px;
 .about{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space+space-evenly;
     align-items: center;
 }
 
