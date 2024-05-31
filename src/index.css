@@ -6,11 +6,11 @@
 }
 :root{
     --bg-body:#222;
-    --bg-alt: #010302;
+    --bg-alt: #050506;
     --text-color:#f5f2f5;
 
-    --primary-color:rgb(23, 29, 210);
-    --header-height:60px;
+    --primary-color:#3014EE;
+    --header-height:70px;
 }
 
 html{
@@ -81,7 +81,7 @@ ul li{
 .active{
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
-    border-top: 2px solid var(--primary-color);
+    /*border-top: 2px solid var(--primary-color);*/
 }
 .actions button{
     width: 30px;
@@ -90,75 +90,14 @@ ul li{
     font-size: 30px;
     color: var(--text-color);
     border: none;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
+
 .btn-menu{
     display: none;
 }
 
-@media (max-width: 768px){
 
-    
-    .nav{
-    position: fixed;
-    top: var(--header-height);
-    left: -100%;
-    width: 80%;
-    height: calc(100vh - var(--header-height));
-    padding: 60px 20px 40px;
-    background-color: #333;
-    transition: left .5s ease-in-out;
-    }
-    ul{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-    }
-    ul li{
-        margin-bottom: 20px;
-        cursor: pointer;
-        text-transform: capitalize;
-        font-size: 20px;
-    }
-    .btn-close{
-        font-size: 30px;
-        position: absolute;
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        top: 60px;
-        left: 80%;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border: none;
-        color: var(--text-color);
-    }
-
-     .show-menu{
-        position: fixed;
-        top: var(--header-height);
-        left: 0%;
-        width: 80%;
-        height: calc(100vh - var(--header-height));
-        padding: 60px 20px 40px;
-        background-color: #333; 
-        transition: left .5s ease-in-out;
-        /*<--!rgba(237, 237, 237,.5)-->*/
-    }
-    
-    .btn-menu{
-       display: contents;
-       top:20px;
-       right: 20px;
-    }
-
-    .card figcaption ul li{
-        display: none;
-    }
-        
-}
 .section{
     width: 100vw;
     height: auto;
@@ -169,8 +108,8 @@ ul li{
     z-index: 2;
 }
 
-.section.title{
-font-size: 28px;
+.section-title{
+font-size: 5vw;
 text-align: center;
 margin: 20px 0px;
 }
@@ -209,24 +148,27 @@ margin: 20px 0px;
 .about{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space+space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 .about-information{
-    max-width: 500px;
+    max-width: clamp(500px ,60%,100%);
     height: inherit;
     padding: 10px 40px;
     display: block;
 }
 .about-information h2{
 margin-bottom: 20px;
-font-size: 35px;
+font-size: 3vw;
 }
 
+p strong{
+    color: var(--primary-color);
+}
 .about-information p{
     line-height: 1.4rem;
-    font-size: 21px;
+    font-size: 1.7vw;
     margin-bottom: 40px;
 }
 
@@ -427,3 +369,73 @@ font-size: 35px;
     border:none;
   }
   
+
+  @media (max-width: 768px){
+
+    
+    .nav{
+    position: fixed;
+    top: var(--header-height);
+    left: -100%;
+    width: 80%;
+    height: calc(100vh - var(--header-height));
+    padding: 60px 20px 40px;
+    background-color: #333;
+    transition: left .5s ease-in-out;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    ul li{
+        margin-bottom: 20px;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+    .btn-close{
+        font-size: 30px;
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        top: 60px;
+        left: 80%;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: var(--text-color);
+    }
+
+     .show-menu{
+        position: fixed;
+        top: var(--header-height);
+        left: 0%;
+        width: 80%;
+        height: calc(100vh - var(--header-height));
+        padding: 60px 20px 40px;
+        background-color: #333; 
+        transition: left .5s ease-in-out;
+        /*<--!rgba(237, 237, 237,.5)-->*/
+    }
+    
+    .btn-menu{
+       display: contents;
+       top:20px;
+       right: 20px;
+    }
+    .about-information h2{
+        font-size: 10vw;
+    }
+    .about-information p{
+        margin-bottom: 20px;
+        font-size: 5vw;
+        }
+
+    .card figcaption ul li{
+        display: none;
+    }
+        
+}
