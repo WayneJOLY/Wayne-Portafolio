@@ -215,8 +215,8 @@ margin: 20px 0px;
 
 .about-information{
     max-width: 500px;
-    height: auto;
-    padding: 50px 40px;
+    height: inherit;
+    padding: 10px 40px;
     display: block;
 }
 .about-information h2{
@@ -225,8 +225,9 @@ font-size: 35px;
 }
 
 .about-information p{
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     font-size: 21px;
+    margin-bottom: 40px;
 }
 
 .download{
@@ -238,10 +239,6 @@ font-size: 35px;
     padding: 12px 22px;
     margin-top: 20px;
     border-radius: 20px;
-}
-
-.about-img{
-    max-width: calc(100vw-500px);
 }
 
 .about-img img{
