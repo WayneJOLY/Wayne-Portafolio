@@ -245,6 +245,7 @@ p strong{
  display: flex;
  flex-direction: column;
  gap: 5px;
+ height: auto;
 }
 
 .soft-skills ul li  {
@@ -370,7 +371,7 @@ p strong{
   }
   
 
-  @media (max-width: 768px){
+@media (max-width: 768px){
 
     
     .nav{
@@ -438,4 +439,15 @@ p strong{
         display: none;
     }
         
+}
+@media (max-width: 480px){
+    body{
+        width: 100VW;
+    }
+
+    .section{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+    }
 }
