@@ -164,7 +164,7 @@ font-size: 3vw;
 }
 
 p strong{
-    color: var(--primary-color);
+    color: #06aef1;
 }
 .about-information p{
     line-height: 1.4rem;
