@@ -172,15 +172,14 @@ p strong{
     margin-bottom: 40px;
 }
 
-.download{
-    width: 42px;
-    height: 64px;
+#download-button{
     background-color: var(--primary-color);
     text-decoration: none;
     font-size: 20px;
     padding: 12px 22px;
     margin-top: 20px;
     border-radius: 20px;
+    border: none;
 }
 
 .about-img img{

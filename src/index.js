@@ -107,3 +107,17 @@ links.forEach(link => {
     }
 )
 })
+
+
+const downloadButton = document.getElementById('download-button');
+downloadButton.addEventListener('click', () => {
+    const file1 = './src/Curiculum Vitae/Desarrollador Gerald R A Wayne JOLY Curriculum CV.pdf';
+    const file2 = './src/Curiculum Vitae/Desarrollador Gerald R A Wayne JOLY Curriculum CV (ATS-Friendly).docx';
+    const link = document.createElement('a');
+    link.href = file1;
+    link.download = 'Desarrollador Gerald R A Wayne JOLY Curriculum CV.pdf';
+    link.click();
+    link.href = file2;
+    link.download = 'Desarrollador Gerald R A Wayne JOLY Curriculum CV (ATS-Friendly).docx';
+    link.click();
+});
