@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -33,10 +34,15 @@ html{
 
 .logo{
     text-decoration: none;
-    font-size: 28px;
+    font-size: 40px;
     color: var(--text-color);
     cursor: pointer;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 500;
+    font-style: normal;
 }
+
+  
 .logo span{
     color: var(--primary-color);
     width: 20px;
@@ -450,7 +456,9 @@ p strong{
         margin: auto;
         padding: 10px;
     }
-
+    .section-title{
+        font-size: 15vw;
+    }
     .soft-skills ul li h3{
         display: flex;
         align-content: center;
