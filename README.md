@@ -45,6 +45,7 @@ Aquí están las herramientas y tecnologías que he utilizado para construir est
 
 Siempre estoy abierto a nuevas oportunidades y colaboraciones. ¡No dudes en contactarme! Puedes encontrarme en:
 
-- [LinkedIn](https/www.linkedin.com/in/gerald-r-a-wayne-joly)
-- [GitHub](https://github.com/WayneJOLY)
+# 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gerald-r-a-wayne-joly) 
+[![Github](https://img.shields.io/badge/GitHub-%230077B5.svg?logo=gitHub&logoColor=black)](https://github.com/WayneJOLY)
 
