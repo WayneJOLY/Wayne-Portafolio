@@ -12,7 +12,7 @@
 - **# 🌟 Mi Portafolio
 
 
-##👍 Ver el Proyecto:
+#🔎 Ver el Proyecto:
    https://waynejoly.github.io/Wayne-Portafolio/#project
 
 
