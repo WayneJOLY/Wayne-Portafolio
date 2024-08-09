@@ -9,10 +9,10 @@
 ## 🚀 Características
 
 - **🌐 Diseño Responsivo**: Se adapta a cualquier dispositivo, ya sea móvil, tablet o escritorio.
-- **# 🌟 Mi Portafolio
 
 
-#🔎 Ver el Proyecto:
+
+# 🔎 Ver el Proyecto:
    https://waynejoly.github.io/Wayne-Portafolio/#project
 
 
