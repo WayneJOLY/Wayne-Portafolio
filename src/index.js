@@ -59,6 +59,22 @@ const skills = [
       path: './src/skills/vsc.svg',
       name: 'VS Code',
     },
+    {
+      path: './src/skills/Sequelize.png',
+      name: 'Sequelize',
+    },
+    {
+      path: './src/skills/postgresql.svg',
+      name: 'Postgre SQL',
+    },
+    {
+      path: './src/skills/express-js.svg',
+      name: 'Express js',
+    },
+    {
+      path: './src/skills/sql-database.svg',
+      name: 'SQL-database',
+    },
   ]
 
   
@@ -121,3 +137,9 @@ downloadButton.addEventListener('click', () => {
     link.download = 'Desarrollador Gerald R A Wayne JOLY Curriculum CV (ATS-Friendly).docx';
     link.click();
 });
+
+
+let theme=document.getElementById('theme')
+theme.addEventListener('click',()=>{
+  document.querySelector('.dark')?.classList.toggle('dark')
+})
