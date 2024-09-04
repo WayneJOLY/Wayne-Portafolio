@@ -16,6 +16,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: none;
     background-color: var(--bg-body);
     color: var(--text-color);
 }
@@ -105,7 +106,7 @@ ul li{
 
 
 .section{
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -121,8 +122,9 @@ margin: 20px 0px;
 }
 .container{
     margin: 30px 10px 15px;
+    padding: auto 50px;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height:auto ;
     display: flex;
     flex-wrap: wrap;
